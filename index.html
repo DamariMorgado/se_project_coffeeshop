@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Coffee Shop Landing Page" />
-    <meta name="author" content="Software Engineer" />
+    <meta name="author" content="Damari Morgado" />
     <meta name="keywords" content="HTML, CSS" />
     <link rel="stylesheet" href="pages/index.css" />
     <link rel="stylesheet" href="vendor/normalize.css" />
@@ -20,15 +20,148 @@
   </head>
   <body>
     <div class="page">
-      <p>Testing</p>
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Triple Teaks Coffee Shop logo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li><a class="nav__link" href="#recipes">Recipes</a></li>
+            <li><a class="nav__link" href="#reservation">Book a table</a></li>
+            <li><a class="nav__link" href="#menu">Menu</a></li>
+            <li><a class="nav__link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span accent">Specialty coffee</span>in the Triple
+          Peaks Library
+        </h1>
+        <p class="header__description">
+          Welcome to our study zone! We've got the coffee to energize you and
+          the cozy vibes to help you get creative.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Illustration of a coffeeshop"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
+        </div>
+      </header>
       <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
-        <section class="menu"></section>
-        <section class="about"></section>
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
+          <div class="recipes__videos">
+            <div class="recipes__video">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc"
+                title="Aeropress recipe"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">Aeropress recipe ~5 min</p>
+            </div>
+            <div class="recipes__video">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/st571DYYTR8"
+                title="French press recipe"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__video-caption">French press recipe ~15 min</p>
+            </div>
+          </div>
+        </section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Book a Table</h2>
+          <form class="reservation__form">
+            <fieldset class="reservation__fieldset">
+              <label class="reservation__label" for="name">Name</label>
+              <input
+                class="reservation__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+              />
+              <label class="reservation__label" for="email">Email</label>
+              <input
+                class="reservation__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+              <label class="reservation__label" for="date">Date</label>
+              <input
+                class="reservation__input"
+                type="date"
+                id="date"
+                name="date"
+                required
+              />
+              <button class="reservation__button" type="submit">
+                Book Now
+              </button>
+            </fieldset>
+          </form>
+        </section>
+        <section class="menu" id="menu">
+          <h2 class="menu__title">Menu</h2>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <h3 class="menu__item-title">Espresso</h3>
+              <p class="menu__item-description">Strong, rich, and bold.</p>
+            </li>
+            <li class="menu__item">
+              <h3 class="menu__item-title">Cappuccino</h3>
+              <p class="menu__item-description">
+                Espresso with steamed milk and foam.
+              </p>
+            </li>
+            <li class="menu__item">
+              <h3 class="menu__item-title">Iced Latte</h3>
+              <p class="menu__item-description">
+                Cool down with espresso and milk on ice.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="about" id="contacts">
+          <h2 class="about__title">About Us</h2>
+          <p class="about__text">
+            Triple Peaks Coffee Shop is the heart of the library. A cozy space
+            for readers, learners, and dreamers.
+          </p>
+          <p class="about__text">
+            We’re passionate about community, creativity, and great coffee. Our
+            goal is to fuel your mind while keeping you warm and welcomed.
+          </p>
+          <div class="about__circle"></div>
+        </section>
       </main>
-      <footer class="footer"></footer>
+
+      <footer class="footer">
+        <p class="footer__copyright">
+          &copy; 2025 Triple Peaks Coffee Shop. All rights reserved.
+        </p>
+      </footer>
     </div>
   </body>
 </html>

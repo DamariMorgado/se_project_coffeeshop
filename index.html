@@ -7,8 +7,8 @@
     <meta name="description" content="Coffee Shop Landing Page" />
     <meta name="author" content="Damari Morgado" />
     <meta name="keywords" content="HTML, CSS" />
-    <link rel="stylesheet" href="pages/index.css" />
-    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="../vendor/normalize.css" />
+    <link rel="stylesheet" href="../pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -35,7 +35,7 @@
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="header__span accent">Specialty coffee</span>in the Triple
+          <span class="header__span-accent">Specialty coffee</span>in the Triple
           Peaks Library
         </h1>
         <p class="header__description">
@@ -86,6 +86,7 @@
             </div>
           </div>
         </section>
+
         <section class="reservation" id="reservation">
           <div class="reservation__content page__section">
             <h2 class="reservation__title">Book a table</h2>
@@ -143,9 +144,9 @@
                     name="terms"
                     required
                   />
-                  <span class="form__checkbox-text"
-                    >I agree with the terms of use</span
-                  >
+                  <span class="form__checkbox-text">
+                    I agree with the terms of use
+                  </span>
                 </label>
               </fieldset>
 
@@ -155,44 +156,102 @@
         </section>
         <section class="menu" id="menu">
           <h2 class="menu__title">Menu</h2>
-          <ul class="menu__list">
-            <li class="menu__item">
+          <p class="menu__subtitle">
+            We brew coffee from locally roasted, Fairtrade certified beans and
+            use biodegradable cups. All teas from our collection are $2/cup.
+          </p>
+          <div class="menu__items">
+            <div class="menu__column">
+              <h3 class="menu__item-title">Filter</h3>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <span>Regular (12 oz)</span><span>$1</span>
+                </li>
+                <li class="menu__list-item">
+                  <span>Large (16 oz)</span><span>$1.25</span>
+                </li>
+                <li class="menu__list-item">
+                  <span>XL (20 oz)</span><span>$1.5</span>
+                </li>
+                <li class="menu__list-item">
+                  <span>Party-size (24 oz, decaf)</span><span>$1.75</span>
+                </li>
+                <li class="menu__list-item">
+                  <span>Iced Coffee (16 oz)</span><span>$1.25</span>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__column">
               <h3 class="menu__item-title">Espresso</h3>
-              <p class="menu__item-description">Strong, rich, and bold.</p>
-            </li>
-            <li class="menu__item">
-              <h3 class="menu__item-title">Cappuccino</h3>
-              <p class="menu__item-description">
-                Espresso with steamed milk and foam.
-              </p>
-            </li>
-            <li class="menu__item">
-              <h3 class="menu__item-title">Iced Latte</h3>
-              <p class="menu__item-description">
-                Cool down with espresso and milk on ice.
-              </p>
-            </li>
-          </ul>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <span>Macchiato</span><span>$2.25</span>
+                </li>
+                <li class="menu__list-item">
+                  <span>Cortado</span><span>$2.5</span>
+                </li>
+                <li class="menu__list-item">
+                  <span>Mocha</span><span>$3</span>
+                </li>
+                <li class="menu__list-item">
+                  <span>Sunrise in the Bay Area (decaf)</span><span>$10</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu__baked">
+            <h3 class="menu__item-title">Baked Goods</h3>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <span>Almond Croissant</span><span>$2</span>
+              </li>
+              <li class="menu__list-item">
+                <span>Banana Bread</span><span>$1.75</span>
+              </li>
+              <li class="menu__list-item">
+                <span>Key Lime Pie</span><span>$3</span>
+              </li>
+              <li class="menu__list-item">
+                <span>Blue Velvet Cake</span><span>$3.75</span>
+              </li>
+              <li class="menu__list-item">
+                <span>Web Cookie</span><span>$2</span>
+              </li>
+              <li class="menu__list-item">
+                <span>Fresh Baguette</span><span>$0.25</span>
+              </li>
+            </ul>
+          </div>
         </section>
+
         <section class="about" id="contacts">
-          <h2 class="about__title">About Us</h2>
-          <p class="about__text">
-            Triple Peaks Coffee Shop is the heart of the library. A cozy space
-            for readers, learners, and dreamers.
-          </p>
-          <p class="about__text">
-            We’re passionate about community, creativity, and great coffee. Our
-            goal is to fuel your mind while keeping you warm and welcomed.
-          </p>
+          <div class="about__content page__section">
+            <h2 class="about__title">About the coffee shop</h2>
+            <p class="about__paragraph">
+              Our coffee shop is located in the Triple Peaks Library. It
+              features 6 tables and free WiFi.
+            </p>
+            <p class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </p>
+            <p class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </p>
+          </div>
           <div class="about__circle"></div>
         </section>
+        <footer class="footer">
+          <p class="footer__copyright">
+            &copy; 2025 Triple Peaks Coffee Shop. All rights reserved.
+          </p>
+        </footer>
       </main>
-
-      <footer class="footer">
-        <p class="footer__copyright">
-          &copy; 2025 Triple Peaks Coffee Shop. All rights reserved.
-        </p>
-      </footer>
     </div>
   </body>
 </html>
+
+           
+          
+               

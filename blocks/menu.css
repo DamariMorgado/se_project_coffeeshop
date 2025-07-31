@@ -1,10 +1,6 @@
 .menu {
-  background-color: #fffaf3;
-  background-image: url("../images/background_menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 100px 80px;
+  background-color: #ffffff;
+  padding: 100px 80px 215px; 
 }
 
 .menu__title {
@@ -12,28 +8,28 @@
   font-size: 44px;
   line-height: 52px;
   text-align: center;
-  margin-bottom: 24px;
+  margin: 0 0 24px 0; 
 }
 
 .menu__subtitle {
-  font-family: "Noto Serif", serif;
+  font-family: "Noto Serif", Times New Roman, serif; 
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  margin: 0 auto 100px;
+  margin: 0 auto 100px auto;
   max-width: 800px;
 }
 
 .menu__items {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 24px; 
   margin-bottom: 100px;
 }
 
-.menu__baked {
-  max-width: 780px;
-  margin: 0 auto;
+.menu__card {
+  width: 380px; 
+  background-color: transparent; 
 }
 
 .menu__item-title {
@@ -55,9 +51,23 @@
 .menu__list-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Noto Serif", Times New Roman, serif; 
   font-size: 16px;
   line-height: 20px;
   color: #000;
-  border-bottom: 1px solid #838383;
-  padding-bottom: 8px;
+  border-bottom: none; 
+  padding-bottom: 0; 
+  position: relative;
 }
+
+.menu__list-item::before {
+  content: "";
+  flex-grow: 1;
+  border-bottom: 1px solid #838383;
+  margin: 0 10px;
+  align-self: center;
+}
+
+
+ 

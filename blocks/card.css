@@ -1,15 +1,19 @@
 .card {
-  background-color: #ffffff;
-  padding: 24px 20px;
+  width: 380px;
+  background-color: transparent; 
+  border-radius: 0; 
+  box-shadow: none; 
+  overflow: visible; 
+  display: block; 
 }
 
 .card__title {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
-  color: #0a2750;
-  margin: 0 0 16px 0;
+  line-height: 30px;
+  margin-bottom: 16px;
+  color: #000000;
 }
 
 .card__list {
@@ -19,16 +23,28 @@
 }
 
 .card__list-item {
-  font-family: "Noto Serif", Times New Roman, serif;
+  font-family: "Noto Serif", serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #838383;
+  position: relative;
+}
+
+.card__list-item:last-child {
+  border-bottom: none;
 }
 
 .card__list-divider {
-  flex-grow: 1;
-  border-bottom: 1px dotted #000000;
+  flex-shrink: 0;
+  width: 10px;
+  height: 1px;
+  background-color: transparent; 
   margin: 0 8px;
 }
+

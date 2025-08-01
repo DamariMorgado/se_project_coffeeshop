@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start; 
 }
 
 .nav__logo {
@@ -30,5 +30,5 @@
 
 .nav__link:hover,
 .nav__link:focus {
-  color: #555;
+  color: #3f96f3;
 }

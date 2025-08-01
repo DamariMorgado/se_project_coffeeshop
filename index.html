@@ -88,45 +88,56 @@
           <h2 class="reservation__title">Book a table</h2>
           <form class="reservation__form form" novalidate>
             <fieldset class="form__fieldset">
-              <label for="name" class="form__label">Name *</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="form__input"
-                placeholder="Name Surname"
-                required
-              />
-              <label for="guests" class="form__label">Number of guests*</label>
-              <input
-                type="number"
-                id="guests"
-                name="guests"
-                class="form__input"
-                min="1"
-                max="8"
-                placeholder="1-8"
-                required
-              />
-              <label for="date" class="form__label">Date & time *</label>
-              <input
-                type="date"
-                id="date"
-                name="date"
-                class="form__input"
-                required
-              />
-              <label for="email" class="form__label">Your email *</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="form__input"
-                placeholder="email@email.com"
-                required
-              />
+              <div class="form__field">
+                <label for="name" class="form__label">Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form__input"
+                  placeholder="Name Surname"
+                  required
+                />
+              </div>
+
+              <div class="form__field">
+                <label for="guests" class="form__label">Number of guests *</label>
+                <input
+                  type="number"
+                  id="guests"
+                  name="guests"
+                  class="form__input"
+                  min="1"
+                  max="8"
+                  placeholder="1–8"
+                  required
+                />
+              </div>
+
+              <div class="form__field">
+                <label for="date" class="form__label">Date & time *</label>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  class="form__input"
+                  required
+                />
+              </div>
+
+              <div class="form__field">
+                <label for="email" class="form__label">Your email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="email@email.com"
+                  required
+                />
+              </div>
             </fieldset>
-            <button type="submit" class="form__button">Book a table</button>
+
             <fieldset class="form__fieldset form__fieldset_type_checkbox">
               <label class="form__checkbox">
                 <input
@@ -138,6 +149,8 @@
                 <span class="form__checkbox-text">I agree with the terms of use</span>
               </label>
             </fieldset>
+
+            <button type="submit" class="form__button">Book a table</button>
           </form>
         </section>
 
@@ -218,3 +231,5 @@
     </div>
   </body>
 </html>
+
+            

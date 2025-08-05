@@ -2,9 +2,9 @@
   background-color: #ffffff;
   background-image: url("../images/background_menu.svg");
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: contain;
-  padding: 100px 80px 215px;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 80px;
 }
 
 .menu__title {
@@ -14,6 +14,7 @@
   line-height: 52px;
   text-align: center;
   margin: 0 0 24px 0;
+  color: #000000;
 }
 
 .menu__subtitle {
@@ -24,13 +25,15 @@
   line-height: 30px;
   text-align: center;
   margin: 0 auto 100px auto;
-  max-width: 800px;
+  max-width: 780px;
+  color: #000000;
 }
 
 .menu__cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  margin-bottom: 100px;
+  gap: 100px;
+  margin: 100px auto 0;
 }
 

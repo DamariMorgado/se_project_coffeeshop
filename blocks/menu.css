@@ -21,7 +21,7 @@
 .menu__subtitle {
   font-family: "Noto Serif", serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal; 
   font-size: 20px;
   line-height: 30px;
   text-align: center;
@@ -35,6 +35,5 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
-  margin: 100px auto 0;
 }
 
